@@ -38,7 +38,7 @@ int main(){
 				break;
 			case 3: annadir();
 				break;
-			case 5: cout << "Gracias por todo." << endl;
+			case 4: cout << "Gracias por todo." << endl;
 				break;
 			default:cout << "\n Esa opcion no esta en el menu! \n";
 				break;			
@@ -55,7 +55,7 @@ void escribir(){
  
 	
 	
-	cout<<"¿Cuantos alumnos quieres annadir a la base de datos?"<<endl;//buscar una funcion que devuelva el numero de registros que tenga archivos
+	cout<<"Â¿Cuantos alumnos quieres annadir a la base de datos?"<<endl;//buscar una funcion que devuelva el numero de registros que tenga archivos
 	cin>>nalumno;
 	for(int i=0 ; i<=nalumno;i++){
 		cout << "introduce el nombre del alumno: "<<endl;
@@ -106,7 +106,7 @@ void annadir(){
 	string nombreArchivo;
 	string linea;
 		
-	cout << "¿A que alumno desea annadir datos?";
+	cout << "Â¿A que alumno desea annadir datos?";
 	getline(cin,nombreArchivo);
 	archivo.open(nombreArchivo.c_str(),ios::app);//convierte el nombre en una cadena con comillas; dentro del sistema de entrada y salida, la accion que se va a realizar es de tipo out(salida)0
 		
